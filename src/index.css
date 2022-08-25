@@ -1,5 +1,6 @@
-body {
+body, html {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,3 +12,114 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+  /* css for Wlcome Element */
+.welcome{
+  background: url('../src/asset/background2.jpg') no-repeat center fixed;
+  background-size: cover;
+  height: 100vh;
+  margin-top: -0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  text-align: center;
+  font-size: 75px;
+  font-style: oblique;
+  /* background: linear-gradient(#cc3399 0%, #ff99cc 100%); */
+}
+.title{
+  font-size: 82px;
+  background: -webkit-linear-gradient(#006699, #99ff99);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.welcome{
+  /* margin-top: 15%; */
+}
+button, .btn-gc{
+  margin-left: 45%;
+  background: transparent;
+  border-style: none;
+}
+.btn-gc{
+  background-color: rgb(88, 176, 226);
+  width: auto;
+  margin-top: 20px;
+}
+img{
+  height: 60px;
+  width: 60px;
+}
+button :hover{
+  cursor: pointer;
+}
+
+ /* css for counter Element */
+#counter-background{
+  background-color: rgb(41, 38, 38);;
+  height: 100vh;
+  margin-top: -41px;
+}
+.head{
+  color: azure;
+  text-align: center;
+  padding-top: 10%;
+  font-size: 60px;
+  font-style: italic;
+}
+.color{
+  color: #006699;
+}
+.counter-container{
+  margin-left: 20%;
+  height: 300px;
+  width: 60%;
+  /* border: 2px solid white; */
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 1100px){
+  .counter-container{
+    margin-left: 0%;
+    /* height: 300px;  */
+    width: 100%; 
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+  }
+  .counter-box{
+    height: 150px;
+  width: 150px;
+  }
+}
+.counter-box{
+  height: 170px;
+  width: 170px;
+  background-color: darkslateblue;
+  color: beige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 55px;
+  font-weight: 700;
+  /* color: #2c69a3; */
+  border-radius: 10px;
+}
+.birthday{
+  color: #2c69a3;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: -70px;
+}
+.legend{
+  color: #2c69a3;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+
+
