@@ -38,7 +38,7 @@ code {
 .welcome{
   /* margin-top: 15%; */
 }
-button, .btn-gc{
+.btn-gc{
   margin-left: 45%;
   background: transparent;
   border-style: none;
@@ -52,7 +52,11 @@ img{
   height: 60px;
   width: 60px;
 }
-button :hover{
+.welcome-btn{
+  border-style: none;
+  margin-left: 22%;
+}
+.welcome-btn :hover{
   cursor: pointer;
 }
 
@@ -120,6 +124,13 @@ button :hover{
   font-size: 40px;
   font-weight: 700;
 }
-
+.loop{
+  border: none;
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 22%;
+  margin-bottom: -20px;
+}
 
 

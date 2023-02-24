@@ -1,67 +1,37 @@
-/* Carousel for sliding images */
+/* container images */
 [type= radio]{
     display: none;
   }
   .pics{
-    height: 350px;
-    width: 100%;
+    height: 395px;
+    width: 300px;
     text-align: center;
   }
-  #slider{
-    height: 45vh;
-    perspective: 1000px;
-    position: relative;
-    top: 20px;
-    transform-style: preserve-3d;
-    /* border: 2px solid red; */
+  .pic-container{
+    display: flex;
+    justify-content: space-around;
+    /* width: 50%; */
   }
-  #slider label{
-    margin: auto;
-    height: 100%;
-    width: 60%;
-    border-radius: 4px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    cursor: pointer;
-    transition: transform 0.4s ease;
+  .outer1, .outer2{
+    width: 49.5%;
+    display: inline-block;
   }
-  
-  #s1:checked ~ #slide4, #s2:checked ~ #slide5,
-  #s3:checked ~ #slide1, #s4:checked ~ #slide2,
-  #s5:checked ~ #slide3 {
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-  transform: translate3d(-30%,0,-200px);
+  .outer2{
+    vertical-align: top;
+  }
+  .pics1{
+    height: 395px;
+    width: 800px;
+    text-align: center;
+  }
+  @media only screen and (max-width: 700px) {
+    .pics1{
+      height: 395px;
+      width: 600px;
+      text-align: center;
+    }
   }
   
-  #s1:checked ~ #slide5, #s2:checked ~ #slide1,
-  #s3:checked ~ #slide2, #s4:checked ~ #slide3,
-  #s5:checked ~ #slide4 {
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-  transform: translate3d(-15%,0,-100px);
-  }
-  
-  #s1:checked ~ #slide1, #s2:checked ~ #slide2,
-  #s3:checked ~ #slide3, #s4:checked ~ #slide4,
-  #s5:checked ~ #slide5 {
-  box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
-  transform: translate3d(0,0,0);
-  }
-  
-  #s1:checked ~ #slide2, #s2:checked ~ #slide3,
-  #s3:checked ~ #slide4, #s4:checked ~ #slide5,
-  #s5:checked ~ #slide1 {
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-  transform: translate3d(15%,0,-100px);
-  }
-  
-  #s1:checked ~ #slide3, #s2:checked ~ #slide4,
-  #s3:checked ~ #slide5, #s4:checked ~ #slide1,
-  #s5:checked ~ #slide2 {
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-  transform: translate3d(30%,0,-200px);
-  }
-
   /* set birthday counter */
 
   .set_container{
@@ -103,6 +73,9 @@
     font-size: 20px;
     color: whitesmoke;
   }
+  .set{
+    background-color: rgb(53, 199, 192);
+  }
   button:hover{
     cursor: pointer;
   }
@@ -112,4 +85,7 @@
   }
   option{
     background-color: aliceblue;
+  }
+  .hold{
+    background-color: palevioletred;
   }

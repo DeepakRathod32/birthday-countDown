@@ -32,8 +32,9 @@ function SetCounter() {
          value={day}
          onChange={(e)=>{setDay(e.target.value)}} />
         <br />
-        <select value={month} onChange={(e) => {setMonth(e.target.value)}}>
-          <option selected value="1">January</option>
+        <select  onChange={(e) => {setMonth(e.target.value)}}>
+          <option value="none" selected disabled hidden>Select Month</option>
+          <option value="1">January</option>
           <option value="2">February</option>
           <option value="3">March</option>
           <option value="4">April</option>
@@ -47,7 +48,7 @@ function SetCounter() {
           <option value="12">December</option>
         </select>
         <br />
-        <button type="submit" onClick={() => {generateLink()}}>Set Counter</button>
+        <button className='set' type="submit" onClick={() => {generateLink()}}>Set Counter</button>
       </div>
       {
         link !== '' ? (
