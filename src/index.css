@@ -14,7 +14,7 @@ code {
 }
   /* css for Wlcome Element */
 .welcome{
-  background: url('../src/asset/background2.jpg') no-repeat center fixed;
+  background: url('../src/asset/background3.jpg') no-repeat center fixed;
   background-size: cover;
   height: 100vh;
   margin-top: -0px;
@@ -31,9 +31,10 @@ code {
 }
 .title{
   font-size: 82px;
-  background: -webkit-linear-gradient(#006699, #99ff99);
+  background: -webkit-linear-gradient(#000f99, #ffe099);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: auto;
 }
 .welcome{
   /* margin-top: 15%; */
@@ -54,7 +55,7 @@ img{
 }
 .welcome-btn{
   border-style: none;
-  margin-left: 22%;
+  margin-top: 50px;
 }
 .welcome-btn :hover{
   cursor: pointer;
@@ -62,36 +63,33 @@ img{
 
  /* css for counter Element */
 #counter-background{
-  background-color: rgb(41, 38, 38);;
+  background-color: rgb(179 174 69 / 32%);
   height: 100vh;
   margin-top: -41px;
 }
 .head{
-  color: azure;
+  color: #9f8947;
   text-align: center;
   padding-top: 10%;
   font-size: 60px;
   font-style: italic;
 }
 .color{
-  color: #006699;
+  color: #99002980;
 }
 .counter-container{
   margin-left: 20%;
   height: 300px;
   width: 60%;
-  /* border: 2px solid white; */
   display: flex;
   justify-content: space-between;
 }
 @media only screen and (max-width: 1100px){
   .counter-container{
     margin-left: 0%;
-    /* height: 300px;  */
     width: 100%; 
     display: flex;
     justify-content: space-around;
-    /* flex-wrap: wrap; */
   }
   .counter-box{
     height: 150px;
@@ -101,36 +99,56 @@ img{
 .counter-box{
   height: 170px;
   width: 170px;
-  background-color: darkslateblue;
-  color: beige;
+  background-color: beige;
+  color: #99002980;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 55px;
   font-weight: 700;
-  /* color: #2c69a3; */
   border-radius: 10px;
 }
 .birthday{
-  color: #2c69a3;
+  color: #bb8745;
   text-align: center;
   font-size: 35px;
   font-weight: 700;
   margin-top: -70px;
 }
 .legend{
-  color: #2c69a3;
+  color: #bb8745;
   font-size: 40px;
   font-weight: 700;
 }
 .loop{
-  border: none;
-  color: black;
+  border: 2px solid darkorange;
+  background-color: white;
+  color: #00796B;
   font-size: 30px;
   font-weight: 700;
-  margin-left: 22%;
+  /* margin-left: 22%; */
   margin-bottom: -20px;
 }
-
-
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.note-container{
+  margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige;
+}
+.birthay-note{
+  font-size: 30px;
+  text-align: center;
+  width: 70%;
+  font-family: cursive;
+  font-style: oblique;
+}
+.picture1{
+  margin-top: 70px;
+}

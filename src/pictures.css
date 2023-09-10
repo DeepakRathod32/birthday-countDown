@@ -12,12 +12,15 @@
     justify-content: space-around;
     /* width: 50%; */
   }
-  .outer1, .outer2{
-    width: 49.5%;
-    display: inline-block;
+  .outer1{
+    /* width: 49.5%;
+    display: inline-block; */
   }
+
   .outer2{
-    vertical-align: top;
+    /* width: 49.5%;
+    display: inline-block;
+    vertical-align: top; */
   }
   .pics1{
     height: 395px;
@@ -65,8 +68,8 @@
   }
   select, button{
     height: 50px;
-    width: 358px;
-    border-radius: 5px;
+    width: 230px;
+    border-radius: 25px;
     background: transparent;
     margin-bottom: 20px;
     border-style: solid;
@@ -87,5 +90,23 @@
     background-color: aliceblue;
   }
   .hold{
-    background-color: palevioletred;
+    background-color: floralwhite;
+  }
+  @media only screen and (max-width: 450px){
+    .outer1{
+      width: auto;
+      display: block;
+    }
+  
+    .outer2{
+      width: auto;
+      display: block;
+    }
+    .picture{
+      margin: auto;
+    }
+    .pic-container {
+      display: flex;
+      flex-direction: column;
+  }
   }

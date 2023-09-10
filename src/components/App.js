@@ -1,4 +1,4 @@
-import {Welcome, Counter, Pictures, SetCounter, RouterCounter} from './index';
+import {Welcome, Counter, Pictures, SetCounter, RouterCounter, Notes} from './index';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
         <Route exact path='/' element={<Counter />}/>
         <Route exact path='/birthday/welcome' element={<Welcome name={name}/>}/>
         <Route exact path='/birthday/picture' element={<Pictures />}/>
+        <Route exact path='/birthday/note' element={<Notes />}/>
         <Route exact path='/birthday/setcounter' element={<SetCounter />}/>
         <Route exact path='/birthday/:name/:day/:month' element={<RouterCounter />}/>
       </Routes>
